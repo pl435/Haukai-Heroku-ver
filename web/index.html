@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- BIT607 Assignment 2: Patricia Lai -  4351096 -->
+    <head>
+        <title>Haukai Restaurant Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mate SC' rel='stylesheet'>
+        <link rel='stylesheet' type='text/css' href='./Styles/styles.css'>
+        
+              
+    </head>
+ 
+    <body>
+
+        <div class="topnav">    <!-- Navigation Bar -->    
+         <ul class="header">
+                <li><a href='Home.html'>Home</a></li>
+                <li><a href='Menu.html'>Menu</a></li>
+                <li><a href='Reservations.html'>Reservations</a></li>
+                <li><a href='Contact.html'>Contact Us</a></li>
+                <li><a href='Store.html'>Gift Vouchers</a></li>
+                <li><a href='/www/private/Staff.html'>Staff</a></li>    
+         </ul>  
+         <div id="brand">
+          <h1>Haukai Restaurant</h1>
+          <img src="Images/shellCrop2.png" alt="A black seashell print logo.">
+
+
+            <!-- <a href="https://www.freepik.com/vectors/icon">Icon vector created by rawpixel.com - www.freepik.com</a>  -->
+         </div>
+        </div>
+        
+        
+        
+        <div class="slideshow-container" id="home-slide"> <!-- Slideshow Display -->
+            <!-- Photo slides -->
+            <div class="mySlides fade">             
+              <img src="./Images/tauranga-bay_1920.jpg" alt="A scenic view of a long coast with a town alongside it and two small islands.">
+            </div>
+            
+            <div class="mySlides fade">              
+              <img src="./Images/pexels-life-of-pix1920.jpg" alt="A fine dining restaurant with fully set tables furnished with wine glasses, a menu and seasonings on top of a white cloth.">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./Images/pexels-julia-volk-6397652.jpg" alt="Fresh mussels and lemons.">
+            </div>
+
+            <!-- Arrow Keys -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            <!-- Dots corresponding to the number of photos -->
+            <div style="text-align:center"> 
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+
+        <!-- Introduction -->
+        <div class="home-greeting">
+            <h2>Welcome! </h2><h3>The Haukai is a restaurant based in the Bay of Islands that specialises in Maori kai.</h3>
+            <h2>Opening Hours</h2><h3>Wednesday to Sunday from 5:30pm</h3>
+            <div class="buttonA" name="menu_button">Come take a look at our
+                <a href=Menu.html>Menu</a>!</div>
+        </div>
+        
+        <hr>
+
+        
+        <div class="footer">    <!-- Footer -->
+            <div class="footer-main">
+                <div class="footer-directory">
+                   <p>Site Directory:</p>
+                   <ul>
+                       <li><a href='Menu.html'>Menu</a></li>
+                       <li><a href='Reservations.html'>Reservations</a></li>
+                       <li><a href='Contact.html'>Contact Us</a></li>
+                   </ul>
+                </div>
+                <div class="footer-privacy">  
+                   <p><a href="PrivacyStatement.html">Privacy Statement</a></p>
+                   <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!" />
+                    </a>
+                   </p>    
+                </div>
+                <div class="footer-address"> 
+                   <p>
+                       Address:<br>
+                       1 Island Street<br>
+                       Kerikeri<br>
+                       Bay of Islands
+                   </p>
+                </div>   
+              </div> 
+        </div>
+        
+        <script src="slideshow2.js"></script>
+    </body>
+    
+    
+ 
+</html>

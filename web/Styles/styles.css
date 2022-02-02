@@ -1,0 +1,513 @@
+body {
+  background-color: gainsboro;
+}
+/* #### HOME PAGE ####*/
+/* Header */
+
+#brand {
+  width: 100%;
+}
+
+/* Page Title Heading */
+h1 {
+font-family: 'Limelight';
+display: block;
+font-size: 3.8vw;
+margin-top: 0.67em;
+margin-bottom: 0.5em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+text-align: center;
+}
+
+#brand img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10vw; 
+  height: 10vw;
+}
+
+/* Sub-title heading */
+.topnav {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    text-align: center;
+    background: #78949c;
+    color: white;
+    font-size: 2em;
+    width: 100%;
+    overflow: auto;
+  }
+
+/* Footer */  
+.footer {
+  position: relative;  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(68, 24, 88);
+}
+
+/* Footer text */
+.footer .footer-main div {
+  float: left;
+  color: white;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 33.33%;
+}
+
+.footer p a, .footer li a {
+  color: white;
+}
+
+/* Navigation bar */
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(4, 36, 97);
+}
+
+.header > li {
+  float: left;
+  width: 16.66%;
+}
+
+/* Navigation bar button text/font */
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+
+  ul.header {
+    font-size: 16px;
+  }
+}
+
+/* Background colour of navigation bar button when hovered */
+li a:hover {
+  background-color: #111;
+}
+
+/*Home - Greeting */
+.home-greeting {
+  text-align: center;
+}
+
+/* Main content heading */
+.p1 {
+  font-family: 'Mate SC';
+  text-align:center;
+}
+
+/* Columns/Grid */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Column dimensions */
+.column {
+  float: left;
+  padding: 10px;
+  height: 450px;
+  
+}
+
+.form {
+  width: 45%;
+  background: rgba(244, 164, 96, 0.5);
+}
+
+.info {
+  width: 55%;
+  font-size: 20px;
+  background: rgba(255, 228, 196, 0.5);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Align image to center */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Image title */
+.picture > h2 {
+  font-family: 'Mate SC';
+}
+
+/* @@@@@@@ Slideshow @@@@@@@ */
+* {box-sizing:border-box}
+
+/* Slideshow container
+.slideshow-container {
+  max-width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slideshow-container > img{
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+*/
+
+#home-slide {
+  max-width: 100%;
+  height: 32.5vw;
+  position: relative;
+  
+  margin: auto;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 32.5vw;
+  object-fit: cover;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* #### MENU PAGE #### */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+.menu-page-intro {
+  font-size: 20px;
+  text-align: center;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 1.6;
+}
+
+.footer-attribution{
+  clear: both;
+}
+
+.footer .footer-attribution p{
+  position: relative;
+  font-size: 1vw;
+  color: white;
+  text-align: left;
+}
+
+.footer .footer-attribution h4 {
+  font-size: 1.2vw;
+  text-align: left;
+  color: white;
+}
+
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+/* #### RESERVERATIONS PAGE #### */
+.row-form {
+  margin: 0.5em;
+  position: relative;
+  float: right;
+  width: 45%;
+}
+
+.googleCalendar{
+  float: left;
+  position: relative;
+  height: 0;
+  width: 50%;
+  padding-bottom: 50%;
+  margin: 0.5em;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .row-form {
+    width: 100%;
+  }
+  
+  .googleCalendar{
+    position: relative;
+    height: 0;
+    width: 98%;
+    padding-bottom: 50%;
+  }
+}
+
+/* #### CONTACT PAGE #### */
+#about-location p {
+  text-align: center;
+}
+
+#contact-form {
+  
+  float: left;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+#contact-info {
+  float: right;
+  background-color: lightgray;
+  text-align: left;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+#contact-form, #contact-info {
+    float: none;
+  }
+}
+
+/* ##### PRIVACY STATEMENT ###### */
+
+.statement {
+  font-size: 18px;
+}
+
+/* #### STAFF PAGE ##### */
+/* Three columns side by side */
+.staff-column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .staff-column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.staff-container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.staff-container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Roster Timetable */
+table {
+  width: 100%;
+}
+
+table, th, td {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+tr:hover{
+  background: grey;
+}
+
+tr:nth-child(1){
+  background: gold;
+  font-weight: bold;
+}
+
+th, td {
+  text-align: left;
+  padding-left: 10px;
+}
