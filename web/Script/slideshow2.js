@@ -32,3 +32,4 @@ function showSlides(n) {
 function teReo() {
   document.getElementById("welcome").innerText = "Kia Ora!";
 }
+
